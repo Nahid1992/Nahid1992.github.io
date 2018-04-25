@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+
+Name       : NahidUlIslam 
+Description: Personal WebPage
+Version    : 1.0
+Released   : 20180423
+
+-->
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style1.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title>
+</title>
+</head>
+
+<body>
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-purple", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-purple";
+}
+</script>
+
+<div class="w3-container">
+<div class="w3-bar w3-border w3-black w3-card-4 w3-margin-top">
+  <a href="index.html" class="w3-blue w3-bar-item w3-button w3-hover-none w3-border-blue w3-border-blue w3-bottombar w3-hover-blue w3-hover-text-white ">Nahid Ul Islam</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-hover-none w3-border-black w3-bottombar w3-hover-border-blue w3-text-white w3-hover-text-white">About</a>
+  <a href="cv.html" class="w3-bar-item w3-button w3-hover-none w3-border-black w3-bottombar w3-hover-border-red w3-text-white w3-hover-text-white">CV</a>
+  <a href="projects.html" class="w3-bar-item w3-button w3-hover-none w3-border-black w3-bottombar w3-hover-border-green w3-text-white w3-hover-text-white">Projects</a>
+  <a href="activities.html" class="w3-bar-item w3-button w3-hover-none w3-border-purple w3-bottombar w3-hover-border-purple w3-text-white w3-hover-text-white">Activities</a>
+</div>
+
+
+<br>
+
+  <div class="w3-bar w3-white">
+    <button class="w3-bar-item w3-button tablink w3-purple" onclick="openCity(event,'PH')">Photography </button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'MU')">Music</button>
+  </div>
+  
+  <div id="PH" class="w3-container w3-border w3-padding city">
+    <h2>Gallery</h2>
+	<div class="linkHover"><a href="https://www.flickr.com/photos/148274935@N06/albums/72157677361903704"><img src="logo/flickr.png" title="Flickr Profile" width="50" height=auto /></a></div>
+    <p>I love to capture moments.</p>
+	
+<div class="w3-row-padding w3-margin-top">
+  
+  <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/40929298041/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/NewYork_01.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">Manhattan, New York</p>
+	</div>
+    </div>
+  </div>
+  
+    <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/27364625538/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/oregon_landscape_01.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">Hillsboro, Oregon</p>
+	</div>
+    </div>
+  </div>
+  
+   <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/28289857529/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/washingtonDC_01.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">Washington D.C</p>
+	</div>
+    </div>
+  </div>	
+	
+  </div>
+  
+  <div class="w3-row-padding w3-margin-top">
+  
+  <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/39079940614/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/marrLand.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">National Harbor, Marryland</p>
+	</div>
+    </div>
+  </div>
+  
+    <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/38694721921/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/chrismas.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">Fredericksburg, Texas</p>
+	</div>
+    </div>
+  </div>
+  
+   <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/37162744824/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/sanAntonioDuck.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">San Antonio, Texas</p>
+	</div>
+    </div>
+  </div>	
+  
+  </div>
+  
+    <div class="w3-row-padding w3-margin-top">
+  
+  <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/24016587998/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/sanAntonioSquirl.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">San Antonio, Texas</p>
+	</div>
+    </div>
+  </div>
+  
+    <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/38694721921/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/NJ_bird.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">Jersey City, New Jersey</p>
+	</div>
+    </div>
+  </div>
+  
+   <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/39337902724/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/austinSkull.jpg" style="width:100%" height="250">
+		</a>
+    <div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">Austin, Texas</p>
+	</div>
+    </div>
+  </div>	
+
+  </div>
+
+    <div class="w3-row-padding w3-margin-top">  
+  <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/36686776805/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/utahZion.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">Zion National Park, Utah</p>
+	</div>
+    </div>
+  </div>
+  
+    <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/36686578635/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/elpasoSand.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">El Paso, Texas</p>
+	</div>
+    </div>
+  </div>
+  
+   <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/36493036532/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/arizonaGrand.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">Grand Canyon, Arizona</p>
+	</div>
+    </div>
+  </div>		
+  </div> 
+  
+      <div class="w3-row-padding w3-margin-top">  
+  <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/36232561790/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/lasV.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">Las Vegas, Nevada</p>
+	</div>
+    </div>
+  </div>
+  
+    <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/35808708104/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/NV_death.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">Death Valley, Nevada</p>
+	</div>
+    </div>
+  </div>
+  
+   <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/36464794361/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/sanFran.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">San Francisco, California</p>
+	</div>	
+    </div>
+  </div>		
+  </div> 
+  
+        <div class="w3-row-padding w3-margin-top">  
+  <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/36581011575/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/sanFan02.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">San Francisco, California</p>
+	</div>	
+    </div>
+  </div>
+  
+    <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/36531610835/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/oregon_woodland.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">Hillsboro, Oregon</p>
+	</div>	
+    </div>
+  </div>
+  
+   <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/35706789363/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/oregonSky.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">Hillsboro, Oregon</p>
+	</div>	
+    </div>
+  </div>		
+  </div>
+
+   <div class="w3-row-padding w3-margin-top">  
+  <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/32367223803/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/oregon_reflection.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">Hillsboro, Oregon</p>
+	</div>	
+    </div>
+  </div>
+  
+    <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/34264453294/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/wetRose.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">San Antonio, Texas</p>
+	</div>	
+    </div>
+  </div>
+  
+   <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://www.flickr.com/photos/148274935@N06/27364621088/in/album-72157677361903704/">
+		  <img class="w3-border w3-padding" src="image_tile/cherry.jpg" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">Hillsboro, Oregon</p>
+	</div>	
+    </div>
+  </div>		
+  </div>
+  </div>
+  
+  
+  
+ <div id="MU" class="w3-container w3-border w3-padding city" style="display:none">
+    <h2>Compositions</h2>
+	<div class="linkHover"><a href="https://www.youtube.com/channel/UCmVtxEoqCO914-dptHa6WTQ/"><img src="logo/yt_logo_rgb_light.png" title="YouTube Channel" width="75" height=auto /></a></div>
+    <p>Composing music has always been a passion for me.</p> 
+	
+	<div class="w3-row-padding w3-margin-top">  
+  <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://youtu.be/1q5Gqs0BiAA">
+		  <img class="w3-border w3-padding" src="video_tile/rainyDay.png" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">A Rainy Day</p>
+	</div>	
+    </div>
+  </div>
+  
+    <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://youtu.be/BQg1ZjSe4wQ">
+		  <img class="w3-border w3-padding" src="video_tile/Reminiscence.png" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">Reminiscence</p>
+	</div>	
+    </div>
+  </div>
+  
+   <div class="w3-third">  	
+    <div class="w3-card imageTitle">
+		<a href="https://youtu.be/geNA9r3qmJw">
+		  <img class="w3-border w3-padding" src="video_tile/Obscure.png" style="width:100%" height="250">
+		</a>
+	<div class="w3-container w3-deep-purple">
+	  <p class="w3-center" style="font-size:12px">Obscure</p>
+	</div>	
+    </div>
+  </div>		
+  </div>
+	
+	
+	
+  </div>
+
+
+
+
+
+<div class="w3-center Signature">
+<img src="screenshot_project/sign.png" width=20% height=auto></img>
+</div>
+
+</body>
+</html>

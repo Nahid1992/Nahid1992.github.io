@@ -1,0 +1,193 @@
+body {
+    background-color: #fefefe;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a {
+	text-decoration: none;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#nav{
+	margin-top:20px;
+}
+
+.profile{
+	margin-left:100px;
+}
+
+.aboutMe{	
+	color:black;
+	margin-top:55px;
+	margin-left:10px;
+	
+}
+
+.linkHover{
+	opacity: 0.5;
+	display:inline-block;
+}
+.linkHover:hover{
+	opacity: 1;
+}
+#welcome{
+	margin-top:100px;
+	color: black;
+	text-align: center;
+}
+
+.projectTile{
+	opacity:.8;
+	text-decoration: none;
+	
+}
+.projectTile:hover{
+	opacity:1
+}
+.projectDescription{
+		
+}
+
+.Signature{
+	opacity:.5;
+	margin-bottom:30px;
+}
+.Signature:hover{
+	opacity:.7
+}
+
+.imageTitle{
+	filter: grayscale(100%);
+}
+.imageTitle:hover{
+	filter: grayscale(0%);
+}
+
+.imageDesc{
+	opacity:.8;
+}
+.imageDesc:hover{
+	opacity:1;
+}
+
+.centerBox{
+	margin:auto;
+	width:100%;
+	padding:10px;
+}body {
+    background-color: #fefefe;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a {
+	text-decoration: none;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#nav{
+	margin-top:20px;
+}
+
+.profile{
+	margin-left:100px;
+}
+
+.aboutMe{	
+	color:black;
+	margin-top:55px;
+	margin-left:10px;
+}
+
+.linkHover{
+	opacity: 0.5;
+	display:inline-block;
+}
+.linkHover:hover{
+	opacity: 1;
+}
+#welcome{
+	margin-top:100px;
+	color: black;
+	text-align: center;
+}
+
+.projectTile{
+	opacity:.8;
+	text-decoration: none;
+	
+}
+.projectTile:hover{
+	opacity:1
+}
+.projectDescription{
+		
+}
+
+.Signature{
+	opacity:.5;
+	margin-bottom:30px;
+}
+.Signature:hover{
+	opacity:.7
+}
+
+.imageTitle{
+	filter: grayscale(100%);
+}
+.imageTitle:hover{
+	filter: grayscale(0%);
+}
+
+.imageDesc{
+	opacity:.8;
+}
+.imageDesc:hover{
+	opacity:1;
+}
+
+.centerBox{
+	margin:auto;
+	width:100%;
+	padding:10px;
+}
+
+.pro_card{
+	margin-top:50px;
+	padding:10px;
+	text-align:center;
+	border-width: thin;
+	
+}
+.box{
+	
+	
+	
+}
+
+
+
+.card {
+	text-align:center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    border-radius: 5px;
+	padding:3px;
+	padding-top:5px;
+	margin-right: auto; margin-left: auto; width: 800px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+
+    padding: 2px 16px;
+}
+.tableBox{
+	font-size:15px;
+}
