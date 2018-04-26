@@ -41,7 +41,7 @@ p {
 .projectTile{
 	opacity:.8;
 	text-decoration: none;
-	
+	transition: 0.2s;
 }
 .projectTile:hover{
 	opacity:1
@@ -53,6 +53,7 @@ p {
 .Signature{
 	opacity:.5;
 	margin-bottom:30px;
+	transition: 0.2s;
 }
 .Signature:hover{
 	opacity:.7
@@ -60,6 +61,7 @@ p {
 
 .imageTitle{
 	filter: grayscale(100%);
+	transition: 0.2s;
 	transition: 0.2s;
 }
 .imageTitle:hover{
