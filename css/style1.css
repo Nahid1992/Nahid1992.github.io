@@ -206,15 +206,14 @@ p {
 
 
 
-<!-- 1) Add this CSS once (in style1.css or a <style> block) -->
-<style>
-  .scroll-x {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch; /* smooth on iOS */
-  }
-  .scroll-x table {
-    min-width: 1000px;            /* force wider-than-screen so it can scroll */
-    white-space: nowrap;           /* keep long lines on one line */
-  }
-</style>
+.scroll-x {
+  overflow-x: auto;              /* enables horizontal scroll */
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+}
+.scroll-x table {
+  min-width: 1000px;             /* force table wider than container so scroll is triggered */
+  white-space: nowrap;           /* keep long text in one line */
+}
+
+
 
