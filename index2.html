@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nahid Ul Islam</title>
+
+  <!-- W3.CSS + your stylesheet -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="css/style1.css">
+
+  <!-- Minimal polish you can move to style1.css later -->
+  <style>
+    :root {
+      --content-max: 1200px;
+    }
+    body { line-height: 1.6; }
+    .container-narrow { max-width: var(--content-max); margin: 0 auto; }
+    .brand { font-weight: 700; }
+    .muted { color: #666; }
+    .table-tight td { padding: 6px 10px; vertical-align: top; }
+    .table-tight td:first-child { color: #444; white-space: nowrap; }
+    .table-spacer tr + tr { border-top: 6px solid transparent; }
+    .section-title { margin: 24px 0 8px; }
+    .w3-leftbar { border-left-width: 4px !important; }
+    .icon-links a { display:inline-block; margin-right:8px; }
+    .w3-card.rounded { border-radius: 10px; overflow: hidden; }
+    .grid { display: grid; gap: 20px; }
+    @media (min-width: 768px) {
+      .grid-2 { grid-template-columns: 1fr 2fr; }
+    }
+    /* Make long tables scroll horizontally on small screens */
+    .tableBox { overflow-x: auto; }
+    /* Improve nav contrast on focus/hover for accessibility */
+    .w3-bar .w3-button:focus-visible { outline: 3px solid #2196F3; outline-offset: 2px; }
+  </style>
+</head>
+
+<body>
+
+<header class="w3-container w3-padding-16 w3-black">
+  <nav class="w3-bar w3-card-4 container-narrow" aria-label="Primary">
+    <a href="index.html" class="w3-bar-item w3-button w3-blue brand">Nahid Ul Islam</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-hover-none w3-bottombar w3-hover-border-blue">About</a>
+    <a href="cv.html" class="w3-bar-item w3-button w3-hover-none w3-bottombar w3-hover-border-red">CV</a>
+    <a href="research.html" class="w3-bar-item w3-button w3-hover-none w3-bottombar w3-hover-border-orange">Research</a>
+    <a href="projects.html" class="w3-bar-item w3-button w3-hover-none w3-bottombar w3-hover-border-green">Projects</a>
+    <a href="activities.html" class="w3-bar-item w3-button w3-hover-none w3-bottombar w3-hover-border-purple">Activities</a>
+  </nav>
+</header>
+
+<div class="w3-panel w3-border-bottom w3-border-top w3-center">
+  <p>Welcome!</p>
+</div>
+
+<main class="container-narrow w3-padding-16">
+
+  <!-- Top grid: profile card + summary -->
+  <section class="grid grid-2">
+    <!-- Profile card -->
+    <aside class="w3-card rounded">
+      <img src="pro_pic2.jpg" alt="Portrait of Nahid Ul Islam" loading="lazy" style="width:100%; height:auto;">
+      <div class="w3-container w3-padding-16">
+        <p class="w3-margin-0"><b>Nahid Ul Islam</b></p>
+        <p class="w3-margin-0 muted">Ph.D. Student in Computer Science</p>
+        <p class="w3-margin-0 muted">Arizona State University</p>
+        <div class="icon-links w3-margin-top" aria-label="Profile links">
+          <a href="https://github.com/Nahid1992" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <img src="logo/GitHub-Mark-32px.png" alt="" width="20" height="20" loading="lazy">
+          </a>
+          <a href="https://www.linkedin.com/in/nahid-ul-islam-687631a1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <img src="logo/In-Black-34px-R.png" alt="" width="20" height="20" loading="lazy">
+          </a>
+          <a href="https://www.facebook.com/nahidXIIX" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="logo/flogo-RGB-HEX-Blk-58.png" alt="" width="20" height="20" loading="lazy">
+          </a>
+          <a href="https://www.instagram.com/nahid_xiix/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <img src="logo/insta_logo.png" alt="" width="20" height="20" loading="lazy">
+          </a>
+          <a href="https://twitter.com/nahidxD" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+            <img src="logo/tweet.png" alt="" width="28" height="28" loading="lazy">
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Summary -->
+    <section aria-labelledby="summary-heading">
+      <div class="aboutMe w3-border-bottom">
+        <h3 id="summary-heading" class="section-title">Summary</h3>
+      </div>
+      <div class="w3-leftbar w3-margin-left w3-hover-border-blue w3-panel">
+        <p style="font-size:17px">
+          I am a Ph.D. student in the Computer Science department at Arizona State University.
+          My research interests include Machine Learning, Deep Learning, and Computer Vision.
+          I completed a six-month Computer Vision internship during my M.Sc. at the University of Texas at San Antonio.
+          I have strong coding experience in Java, C/C++, MATLAB, and Python; I’m proficient in advanced Programming, Algorithms,
+          Data Structures, and Database Design. I also have strong knowledge of Object-Oriented Analysis/Design and Programming
+          with C/C++ (STL) and Java.
+        </p>
+      </div>
+    </section>
+  </section>
+
+  <!-- Publications: Journals -->
+  <section aria-labelledby="journals-heading">
+    <div class="aboutMe w3-border-bottom">
+      <h3 id="journals-heading" class="section-title">Peer-refereed Journal Publications</h3>
+    </div>
+    <div class="w3-leftbar w3-margin-left w3-hover-border-blue w3-panel tableBox">
+      <table class="table-tight table-spacer" style="white-space: nowrap;">
+        <tr>
+          <td width="100"><b>2024</b></td>
+          <td>1. Islam, N. U., Zhou, Z., Gehlot, S., Gotway, M. B., &amp; Liang, J. <i>Seeking an optimal approach for Computer-aided Diagnosis of Pulmonary Embolism.</i> <span class="muted">Medical Image Analysis, 91, 102988.</span></td>
+        </tr>
+        <tr>
+          <td width="100"><b>2024</b></td>
+          <td>2. Guo, Z., Islam, N. U., Gotway, M. B., &amp; Liang, J. <i>Stepwise incremental pretraining for integrating discriminative, restorative, and adversarial learning.</i> <span class="muted">Medical Image Analysis, 103159.</span></td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- Publications: Conferences -->
+  <section aria-labelledby="confs-heading">
+    <div class="aboutMe w3-border-bottom">
+      <h3 id="confs-heading" class="section-title">Peer-refereed Conference Full Publications</h3>
+    </div>
+    <div class="w3-leftbar w3-margin-left w3-hover-border-blue w3-panel tableBox">
+      <table class="table-tight table-spacer" style="white-space: nowrap;">
+        <!-- Under-review example kept as comment:
+        <tr>
+          <td width="100"><b>2026</b></td>
+          <td>1. Islam, N. U., Ma, D., Gotway, M. B., &amp; Liang, J. <i>A Generic 3D Found
