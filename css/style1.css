@@ -203,3 +203,18 @@ p {
 .research_tile:hover{
 	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
 }
+
+
+
+<!-- 1) Add this CSS once (in style1.css or a <style> block) -->
+<style>
+  .scroll-x {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* smooth on iOS */
+  }
+  .scroll-x table {
+    min-width: 1000px;            /* force wider-than-screen so it can scroll */
+    white-space: nowrap;           /* keep long lines on one line */
+  }
+</style>
+
