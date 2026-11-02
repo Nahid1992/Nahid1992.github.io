@@ -170,3 +170,6 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
 .logo-row .inst-logo.tall{max-width:56px;max-height:62px}
 .logo-row .x{color:var(--muted);opacity:.55;font-size:18px;line-height:1}
 a.logo-row{text-decoration:none;width:fit-content}
+a.ytthumb{position:relative;display:block}
+a.ytthumb::after{content:"";position:absolute;left:50%;top:50%;width:68px;height:48px;transform:translate(-50%,-50%);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 68 48'%3E%3Crect width='68' height='48' rx='12' fill='%23e62117'/%3E%3Cpath d='M27 14l20 10-20 10z' fill='%23fff'/%3E%3C/svg%3E") center/contain no-repeat;opacity:.9;filter:drop-shadow(0 2px 6px rgba(0,0,0,.35));transition:transform .2s,opacity .2s;pointer-events:none}
+a.ytthumb:hover::after{opacity:1;transform:translate(-50%,-50%) scale(1.1)}
