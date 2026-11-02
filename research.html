@@ -1,169 +1,69 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-
-Name       : NahidUlIslam 
-Description: Personal WebPage
-Version    : 1.0
-Released   : 20180423
-
--->
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link rel="stylesheet" type="text/css" href="css/style1.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<title>
-</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Research by Nahid Ul Islam: foundation models, multi-task learning, and computer vision.">
+<title>Research | Nahid Ul Islam</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="css/site.css">
 </head>
-
 <body>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="index.html">Nahid Ul Islam</a>
+  <nav class="menu" aria-label="Main"><a href="index.html">About</a><a href="cv.html">CV</a><a href="research.html" class="active" aria-current="page">Research</a><a href="projects.html">Projects</a><a href="activities.html">Activities</a></nav>
+</div></header>
 
-<div class="w3-container">
-<div class="w3-bar w3-border w3-black w3-card-4 w3-margin-top">
-  <a href="index.html" class="w3-blue w3-bar-item w3-button w3-hover-none w3-border-blue w3-border-blue w3-bottombar w3-hover-blue w3-hover-text-white ">Nahid Ul Islam</a>
-  <a href="index.html" class="w3-bar-item w3-button w3-hover-none w3-border-black w3-bottombar w3-hover-border-blue w3-text-white w3-hover-text-white">About</a>
-  <a href="cv.html" class="w3-bar-item w3-button w3-hover-none w3-border-black w3-bottombar w3-hover-border-red w3-text-white w3-hover-text-white">CV</a>
-  <a href="research.html" class="w3-bar-item w3-button w3-hover-none w3-border-orange w3-bottombar w3-hover-border-orange w3-text-white w3-hover-text-white">Research</a>
-  <a href="projects.html" class="w3-bar-item w3-button w3-hover-none w3-border-black w3-bottombar w3-hover-border-green w3-text-white w3-hover-text-white">Projects</a>
-  <a href="activities.html" class="w3-bar-item w3-button w3-hover-none w3-border-black w3-bottombar w3-hover-border-purple w3-text-white w3-hover-text-white">Activities</a>
-</div>
+<main class="wrap">
+  <div class="pagehead"><div class="eyebrow">Research</div><h1>Deep Learning and Computer Vision</h1>
+  <p>My Ph.D. research, in collaboration with Mayo Clinic, focused on large-scale pretraining and multi-task learning that unify classification, detection, and segmentation in a single model.</p></div>
 
+  <article class="rcard"><div class="figs"><img src="research_title/FoundationX_Title.png" alt="Foundation X overview"><img src="research_title/FoundationX_Poster.png" alt="Foundation X poster"></div>
+    <div class="body"><div class="eyebrow">Ph.D. Research</div>
+    <h3>Foundation X: Integrating Classification, Localization, and Segmentation through Lock-Release Pretraining Strategy for Chest X-ray Analysis</h3>
+    <p>Training deep learning models requires large annotated datasets, but annotations are heterogeneous across tasks and datasets. 
+				Foundation X is an end-to-end framework that trains a multi-task foundation model by leveraging diverse expert-level annotations from multiple public datasets. 
+				It introduces a Cyclic & Lock-Release pretraining strategy alongside a student-teacher learning paradigm to enhance knowledge retention while mitigating overfitting. 
+				Pretrained on 11 chest X-ray datasets (~826k images) spanning 11 classification, 6 localization, and 3 segmentation tasks, Foundation X integrates all three task types in a single model. 
+				It outperforms single-task baselines with average gains of +1.0% AUC, +8.4% mAP, and +3.7% Dice, and shows strong cross-dataset and cross-task generalization. 
+				The extended version, Foundation X+ (under review), adds Region-Guided ROI Alignment to transfer detection cues to segmentation. </p>
+    <div class="links"><a class="btn" href="https://github.com/jlianglab/Foundation_X" target="_blank" rel="noopener noreferrer">GitHub: Foundation_X</a></div></div></article>
 
-<div class="w3-margin  w3-container w3-border research_tile">
-<div class="boxText">
-<p>Computer Vision in Medical Image Analysis</P>
-<p style="font-size:20px"><b>Main Research in Ph.D</b></p>
-<p style="font-size:17px"><b>Supervisor: Dr. Jianming Liang</b></p>
+  <article class="rcard"><div class="figs"><img src="research_title/FoundationCTPA_Title.png" alt="Foundation CTPA overview"><img src="research_title/FoundationCTPA_Poster.png" alt="Foundation CTPA poster"></div>
+    <div class="body"><div class="eyebrow">Ph.D. Research</div>
+    <h3>Foundation CTPA: A Unified Slice-Based 3D Foundation Model for Classification, Detection, and Segmentation</h3>
+    <p>Foundation CTPA is an end-to-end 3D foundation model that integrates image-level classification, volume-level classification, detection, and segmentation in one framework, 
+		learning coherent 2D slice-level and 3D volume-level representations. 
+		It is pretrained on over 1.5 million image slices from 3D volumes and introduces Region-Guided ROI Alignment to transfer detection cues to segmentation. 
+		Compared with single-task baselines, it achieves average gains of +6.7% image AUC, +2.6% volume AUC, +16.5% mAP, and +5.8% Dice, with strong generalization to unseen benchmarks and cross-domain transferability. 
+		The journal version, Foundation Chest CT-CTPA, is under review at Medical Image Analysis.</p>
+    <div class="links"><a class="btn" href="https://github.com/jlianglab/Foundation_CTPA" target="_blank" rel="noopener noreferrer">GitHub: Foundation_CTPA</a></div></div></article>
 
-
-</div>
-  <div class="w3-row-padding w3-margin-top">  
-  <div class="w3-third">  	
-    <div class="w3-card ">
-		  <img src="research_title/FoundationX_Title.png" style="width:100%; height:auto;">
-    </div>
-  </div>
-  
-    <div class="w3-third">  	
-    <div class="w3-card ">
-		  <img src="research_title/FoundationX_Poster.png" style="width:100%; height:auto;">
-    </div>
-  </div>
-   <div class="w3-padding w3-third">
-	        <p class="w3-border-bottom" style="font-size:17px"><b>Foundation X: Integrating Classification, Localization, and Segmentation through Lock-Release Pretraining Strategy for Chest X-ray Analysis</b></p>
-		<p style="font-size:17px">Developing deep-learning models for medical imaging requires large, annotated datasets, but the heterogeneity of annotations across tasks presents significant challenges. 
-			Foundation X is an end-to-end framework designed to train a multi-task foundation model by leveraging diverse expert-level annotations from multiple public datasets. 
-			It introduces a Cyclic & Lock-Release pretraining strategy alongside a student-teacher learning paradigm to enhance knowledge retention while mitigating overfitting. 
-			Trained on 11 chest X-ray datasets, Foundation X seamlessly integrates classification, localization, and segmentation tasks. 
-			Experimental results demonstrate its ability to maximize annotation utility, improve cross-dataset and cross-task learning, and 
-			achieve superior performance in disease classification, localization, and segmentation. <br>
-		</p>
-	   	<p style="font-size:17px">
-		  <a href="https://openaccess.thecvf.com/content/WACV2025/papers/Islam_Foundation_X_Integrating_Classification_Localization_and_Segmentation_through_Lock-Release_Pretraining_WACV_2025_paper.pdf" target="_blank" rel="noopener noreferrer style="text-decoration: underline;">Publication Link: WACV 2025 Paper</a><br>
-		  <a href="https://github.com/jlianglab/Foundation_X" target="_blank" rel="noopener noreferrer style="text-decoration: underline;">GitHub Link: Foundation_X</a><br>
-		</p>
-		
-  </div>
-
-
-	  
-  <div class="w3-row-padding w3-margin-top">  
-  <div class="w3-third">  	
-    <div class="w3-card ">
-		  <img src="research_title/SeekingApproach_for_PE.png" style="width:100%; height:auto;">
-    </div>
-  </div>
-  
-    <div class="w3-third">  	
-    <div class="w3-card ">
-		  <img src="research_title/SeekingApproach_for_PE_POSTER.png" style="width:100%; height:auto;">
-    </div>
-  </div>
-   <div class="w3-padding w3-third">
-	        <p class="w3-border-bottom" style="font-size:17px"><b>Seeking an Optimal Approach for Computer-aided Diagnosis of Pulmonary Embolism</b></p>
-		<p style="font-size:17px">Pulmonary embolism (PE) represents a blood clot that travels to the blood vessels in the lung, causing vascular obstruction, and in some patients, death. 
+  <article class="rcard"><div class="figs"><img src="research_title/SeekingApproach_for_PE.png" alt="Seeking an optimal approach for pulmonary embolism diagnosis"><img src="research_title/SeekingApproach_for_PE_POSTER.png" alt="Pulmonary embolism diagnosis poster"></div>
+    <div class="body"><div class="eyebrow">Ph.D. Research</div>
+    <h3>Seeking an Optimal Approach for Computer-aided Diagnosis of Pulmonary Embolism</h3>
+    <p>Pulmonary embolism (PE) represents a blood clot that travels to the blood vessels in the lung, causing vascular obstruction, and in some patients, death. 
 			CT pulmonary angiography (CTPA), is the most common type of medical imaging to evaluate patients with suspected PE. 
 			These CT scans consist of hundreds of images that require detailed review to identify clots within the pulmonary arteries. 
 			Recent research in deep learning across academia and industry produced numerous architectures, various model initializations, and distinct learning paradigms. 
 			It has resulted in many competing approaches to Computer-aided Diagnosis (CAD) implementation in medical imaging and produced great confusion in the CAD community. 
 			We have conducted extensive experiments with various deep learning architectures, model initializations, learning paradigms, and 
-			data pre-processing techniques applicable for PE diagnosis at both the slice and exam levels. <br>
-		</p>	
-		<p style="font-size:17px">
-		  <a href="https://arxiv.org/pdf/2109.07029.pdf" target="_blank" rel="noopener noreferrer style="text-decoration: underline;">Publication Link: Workshop Paper in MICCAI</a><br>
-		  <a href="https://www.sciencedirect.com/science/article/pii/S1361841523002487" target="_blank" rel="noopener noreferrer style="text-decoration: underline;">Publication Link: Medical Image Analysis Journal</a><br>
-		  <a href="https://github.com/Nahid1992/CAD_PE" target="_blank" rel="noopener noreferrer style="text-decoration: underline;">GitHub Link: CAD_PE</a><br>
-		</p>
-  </div>	
+			data pre-processing techniques applicable for PE diagnosis at both the slice and exam levels. The study also proposes Embedding-based ViT (EViT), a two-stage framework that aggregates image-level representations across variable-length image sequences for volume-level prediction, improving AUC by 2.22% over prior state-of-the-art. </p>
+    <div class="links"><a class="btn" href="https://github.com/Nahid1992/CAD_PE" target="_blank" rel="noopener noreferrer">GitHub: CAD_PE</a></div></div></article>
 
-
-  </div>
-</div>
-</div>
-
-	
-<div class="w3-margin  w3-container w3-border research_tile">
-<div class="boxText">
-<p>Computer Vision</P>
-</div>
-	<div class="w3-row-padding w3-margin-top">  
-  <div class="w3-third">  	
-    <div class="w3-card ">
-		  <img src="research_title/masters_thesis.png" style="width:100%" height="300">
-    </div>
-  </div>
-  
-    <div class="w3-third">  	
-    <div class="w3-card ">
-		  <img src="research_title/ageEstimation.png" style="width:100%" height="300">
-    </div>
-  </div>
-  
-   <div class="w3-padding w3-third">
-		<p class="w3-border-bottom" style="font-size:20px"><b>M.Sc. Thesis</b></p>
-		<p style="font-size:17px"><b>Supervisor: Dr. Qi Tian</b></p>
-		<p style="font-size:17px">Worked on Face Detection, Gender Classification and Age Estimation classification algorithm enhancement using Discrete Cosine Transformation, 
-		Histogram of Oriented Features as Feature Extraction and Convolutional Neural Network and Support Vector Machine as Machine Learning techniques. </p> <br>
-		
-  </div>		
-  </div>
-</div>
-
-<div class="w3-margin  w3-container w3-border research_tile">
-<div class="boxText">
-<p>Image processing</P>
-</div>
-	<div class="w3-row-padding w3-margin-top">  
-  <div class="w3-third">  	
-    <div class="w3-card ">
-		  <img src="research_title/undergrad_thesis.png" style="width:100%" height="300">
-    </div>
-  </div>
-  
-    <div class="w3-third">  	
-    <div class="w3-card ">
-		  <img src="research_title/Bangali License Plate Detection.png" style="width:100%" height="300">
-    </div>
-  </div>
-  
-   <div class="w3-padding w3-third">
-		<p class="w3-border-bottom" style="font-size:20px"><b>B.Sc. Thesis</b></p>
-		<p style="font-size:17px"><b>Supervisor: Rubel Biswas</b></p>
-		<p style="font-size:17px"><b>Co-Supervisor: Zahangir Alom</b></p>
-		<p style="font-size:17px">Worked on Automated parking lot management system for Bengali Language, by using Connected Component labeling, Bounding Box, 
-		Canny Edge Detection & Hough Transformation for license plate localization and used OCR for pattern recognition following by database to store as well as 
-		manipulating the system.</p>
-		
-  </div>		
-  </div>
-</div>
-
-
-</div>
-<div class="w3-center Signature">
-<img src="screenshot_project/sign.png" width=20% height=auto></img>
-</div>
+  <!-- <div class="pagehead" style="padding-top:20px"><div class="eyebrow">Earlier work</div><h2 style="font-size:26px">Thesis Research</h2></div> -->
+  <article class="rcard thesis"><div class="figs"><img src="research_title/masters_thesis.png" alt="M.Sc. thesis overview"><img src="research_title/ageEstimation.png" alt="Age estimation results"></div>
+    <div class="body"><div class="eyebrow">M.Sc. Thesis</div><h3>Face Detection, Gender Classification and Age Estimation</h3>
+    <p>Improved algorithms for face detection, gender classification, and age estimation using Discrete Cosine Transform (DCT) and Histogram of Oriented Gradients (HOG) for feature extraction, with Convolutional Neural Networks and Support Vector Machines for classification.</p></div></article>
+  <article class="rcard thesis"><div class="figs"><img src="research_title/undergrad_thesis.png" alt="B.Sc. thesis overview"><img src="research_title/Bangali License Plate Detection.png" alt="Bengali license plate detection"></div>
+    <div class="body"><div class="eyebrow">B.Sc. Thesis</div><h3>Automated Parking Lot Management for Bengali License Plates</h3>
+    <p>Built an automated parking lot management system for Bengali license plates. License plates were localized with connected component labeling, bounding boxes, Canny edge detection, and the Hough transform, then recognized with OCR, and records were stored and managed in a database.</p></div></article>
+</main>
+<footer><div class="wrap">
+  <span>&copy; 2026 Nahid Ul Islam &middot; Mesa, Arizona</span>
+  <span><a href="https://scholar.google.com/citations?user=uusv5scAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> &middot; <a href="https://github.com/Nahid1992" target="_blank" rel="noopener noreferrer">GitHub</a> &middot; <a href="https://www.linkedin.com/in/nahid-ul-islam-ph-d-687631a1" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+</div></footer>
 
 </body>
 </html>
-
