@@ -174,7 +174,7 @@ The band initially started with three members: Akash, Nahid, and Tomal. Based on
     <div class="w3-row-padding w3-margin-top">
       <div class="w3-third">
         <div class="w3-card imageTitle">
-          <a href="https://www.youtube.com/watch?v=SQZbpzhT9MI">
+          <a class="ytthumb" href="https://www.youtube.com/watch?v=SQZbpzhT9MI">
             <img class="w3-border w3-padding" src="video_tile/band_video_1.png" style="width:100%" height="250">
           </a>
         </div>
@@ -182,7 +182,7 @@ The band initially started with three members: Akash, Nahid, and Tomal. Based on
 
       <div class="w3-third">
         <div class="w3-card imageTitle">
-          <a href="https://www.youtube.com/watch?v=VT_1gZ4Ux-I">
+          <a class="ytthumb" href="https://www.youtube.com/watch?v=VT_1gZ4Ux-I">
             <img class="w3-border w3-padding" src="video_tile/band_video_2.png" style="width:100%" height="250">
           </a>
         </div>
@@ -190,7 +190,7 @@ The band initially started with three members: Akash, Nahid, and Tomal. Based on
 
       <div class="w3-third">
         <div class="w3-card imageTitle">
-          <a href="https://www.youtube.com/watch?v=lIiQh0l5xqU">
+          <a class="ytthumb" href="https://www.youtube.com/watch?v=lIiQh0l5xqU">
             <img class="w3-border w3-padding" src="video_tile/band_video_3.png" style="width:100%" height="250">
           </a>
         </div>
@@ -198,7 +198,7 @@ The band initially started with three members: Akash, Nahid, and Tomal. Based on
 
 		<div class="w3-third">
         <div class="w3-card imageTitle">
-          <a href="https://www.youtube.com/watch?v=bU4sj7zL7Ks">
+          <a class="ytthumb" href="https://www.youtube.com/watch?v=bU4sj7zL7Ks">
             <img class="w3-border w3-padding" src="video_tile/band_video_4.png" style="width:100%" height="250">
           </a>
         </div>
@@ -270,7 +270,7 @@ The band initially started with three members: Akash, Nahid, and Tomal. Based on
 		  <img class="w3-border w3-padding" src="video_tile/Occlusion.png" style="width:100%" height="250">
 		</a>
 	<div class="w3-container w3-deep-purple">
-	  <p class="w3-center" style="font-size:12px">Overlay</p>
+	  <p class="w3-center" style="font-size:12px">Occlusion</p>
 	</div>	
     </div>
 	</div>
@@ -586,6 +586,18 @@ The band initially started with three members: Akash, Nahid, and Tomal. Based on
 <div class="w3-center Signature">
 <img src="screenshot_project/sign.png" width=20% height=auto></img>
 </div>
+
+<!-- Auto YouTube thumbnails for the RedRock Dreamers video tiles (links marked class="ytthumb") -->
+<script>
+document.querySelectorAll('a.ytthumb').forEach(function (a) {
+  var m = a.href.match(/(?:youtu\.be\/|shorts\/|[?&]v=)([A-Za-z0-9_-]{11})/);
+  var img = a.querySelector('img');
+  if (m && img) {
+    img.src = 'https://img.youtube.com/vi/' + m[1] + '/mqdefault.jpg';
+    img.style.cssText = 'width:100%; height:250px; object-fit:cover;';
+  }
+});
+</script>
 
 </body>
 </html>
