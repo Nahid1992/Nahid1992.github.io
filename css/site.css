@@ -67,6 +67,9 @@ p{margin:0 0 1em}
 .thesis-box{margin-top:14px;padding:14px 16px;background:var(--surface);border:1px solid var(--line);border-radius:10px}
 .thesis-box h4{font-size:16px;margin:8px 0 6px;line-height:1.4}
 .thesis-box p{margin:0;color:var(--muted);font-size:14.5px}
+.entry .org.inst{color:var(--accent-ink);font-weight:700;font-size:17px;margin-bottom:6px}
+.inst-logo{display:block;margin-top:18px;width:auto;height:auto;max-width:110px;max-height:52px;object-fit:contain;opacity:.55;transition:opacity .2s}
+.entry:hover .inst-logo{opacity:.9}
 .sub{color:var(--muted);font-style:italic;margin-bottom:8px;font-size:15px}
 
 .list{list-style:none;margin:0;padding:0}
@@ -159,3 +162,11 @@ footer a{color:var(--muted)}footer a:hover{color:var(--accent)}
   .list li{grid-template-columns:1fr;gap:2px}.list.sw li,.list.aw li{grid-template-columns:1fr;justify-items:start;gap:6px}
   .tline li{grid-template-columns:1fr;gap:0}
 }
+.inst-link{display:block;width:fit-content;text-decoration:none}
+.entry .org.inst a{color:inherit;text-decoration:none}
+.entry .org.inst a:hover{text-decoration:underline}
+.logo-row{display:flex;align-items:center;gap:12px;margin-top:18px}
+.logo-row .inst-logo{margin-top:0}
+.logo-row .inst-logo.tall{max-width:56px;max-height:62px}
+.logo-row .x{color:var(--muted);opacity:.55;font-size:18px;line-height:1}
+a.logo-row{text-decoration:none;width:fit-content}
