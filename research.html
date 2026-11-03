@@ -7,7 +7,7 @@
 <title>Research | Nahid Ul Islam</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="css/site.css?v=20261103">
+<link rel="stylesheet" href="css/site.css?v=20261104">
 </head>
 <body>
 <header class="topbar"><div class="wrap">
@@ -15,10 +15,15 @@
   <nav class="menu" aria-label="Main"><a href="index.html">Home</a><a href="cv.html">CV</a><a href="research.html" class="active" aria-current="page">Research</a><a href="projects.html">Projects</a><a href="activities.html">Activities</a></nav>
 </div></header>
 
+<nav class="subnav" id="subnav" aria-label="Page sections"><div class="wrap">
+  <a href="#phd">Ph.D. Research / Dissertation</a><a href="#msc">M.Sc. Thesis</a><a href="#bsc">B.Sc. Thesis</a>
+</div></nav>
+
 <main class="wrap">
   <div class="pagehead"><div class="eyebrow">Research</div><h1>Deep Learning and Computer Vision</h1>
-  <p>My Ph.D. research, in collaboration with Mayo Clinic, focused on large-scale pretraining and multi-task learning that unify classification, detection, and segmentation in a single model.</p></div>
+  <p>My research experience spans Artificial Intelligence, Machine Learning, Deep Learning, Computer Vision, Image Processing, and Foundation Models. My work includes model development, experiment design, large-scale pretraining, multi-task learning, self-supervised and transfer learning, benchmarking, and analysis, using CNNs, Vision Transformers, and Swin Transformers across classification, detection, and segmentation in 2D and 3D, with distributed training on GPU and HPC clusters.</p></div>
 
+  <section class="section" id="phd" style="padding-top:24px"><div class="eyebrow">Arizona State University</div><h2>Ph.D. Research / Dissertation</h2>
   <article class="rcard"><div class="figs"><img src="research_title/FoundationX_Title.png" alt="Foundation X overview"><img src="research_title/FoundationX_Poster.png" alt="Foundation X poster"></div>
     <div class="body"><div class="eyebrow">Ph.D. Research</div>
     <h3>Foundation X: Integrating Classification, Localization, and Segmentation through Lock-Release Pretraining Strategy for Chest X-ray Analysis</h3>
@@ -51,19 +56,42 @@
 			We have conducted extensive experiments with various deep learning architectures, model initializations, learning paradigms, and 
 			data pre-processing techniques applicable for PE diagnosis at both the slice and exam levels. The study also proposes Embedding-based ViT (EViT), a two-stage framework that aggregates image-level representations across variable-length image sequences for volume-level prediction, improving AUC by 2.22% over prior state-of-the-art. </p>
     <div class="links"><a class="btn" href="https://github.com/Nahid1992/CAD_PE" target="_blank" rel="noopener noreferrer">GitHub: CAD_PE</a></div></div></article>
+  </section>
 
-  <!-- <div class="pagehead" style="padding-top:20px"><div class="eyebrow">Earlier work</div><h2 style="font-size:26px">Thesis Research</h2></div> -->
+  <section class="section" id="msc"><div class="eyebrow">University of Texas at San Antonio</div><h2>M.Sc. Thesis</h2>
   <article class="rcard thesis"><div class="figs"><img src="research_title/masters_thesis.png" alt="M.Sc. thesis overview"><img src="research_title/ageEstimation.png" alt="Age estimation results"></div>
     <div class="body"><div class="eyebrow">M.Sc. Thesis</div><h3>Face Detection, Gender Classification and Age Estimation</h3>
     <p>Improved algorithms for face detection, gender classification, and age estimation using Discrete Cosine Transform (DCT) and Histogram of Oriented Gradients (HOG) for feature extraction, with Convolutional Neural Networks and Support Vector Machines for classification.</p></div></article>
+  </section>
+
+  <section class="section" id="bsc"><div class="eyebrow">BRAC University</div><h2>B.Sc. Thesis</h2>
   <article class="rcard thesis"><div class="figs"><img src="research_title/undergrad_thesis.png" alt="B.Sc. thesis overview"><img src="research_title/Bangali License Plate Detection.png" alt="Bengali license plate detection"></div>
     <div class="body"><div class="eyebrow">B.Sc. Thesis</div><h3>Automated Parking Lot Management for Bengali License Plates</h3>
     <p>Built an automated parking lot management system for Bengali license plates. License plates were localized with connected component labeling, bounding boxes, Canny edge detection, and the Hough transform, then recognized with OCR, and records were stored and managed in a database.</p></div></article>
+  </section>
 </main>
 <footer><div class="wrap">
   <span>&copy; 2026 Nahid Ul Islam &middot; Mesa, Arizona</span>
   <span><a href="https://scholar.google.com/citations?user=uusv5scAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar</a> &middot; <a href="https://github.com/Nahid1992" target="_blank" rel="noopener noreferrer">GitHub</a> &middot; <a href="https://www.linkedin.com/in/nahid-ul-islam-ph-d-687631a1" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
 </div></footer>
 
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('#subnav a'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'));});
+  function update(){
+    var y=window.scrollY+140, cur=-1;
+    for(var i=0;i<secs.length;i++){ if(secs[i]&&secs[i].offsetTop<=y) cur=i; }
+    if(window.innerHeight+window.scrollY>=document.body.scrollHeight-4) cur=secs.length-1;
+    links.forEach(function(a,i){
+      var on=i===cur; a.classList.toggle('on',on);
+      if(on){ a.setAttribute('aria-current','true'); var bar=a.parentNode;
+        var l=a.offsetLeft-bar.clientWidth/2+a.clientWidth/2; if(bar.scrollWidth>bar.clientWidth) bar.scrollLeft=l; }
+      else a.removeAttribute('aria-current');
+    });
+  }
+  window.addEventListener('scroll',update,{passive:true}); window.addEventListener('resize',update); update();
+})();
+</script>
 </body>
 </html>
