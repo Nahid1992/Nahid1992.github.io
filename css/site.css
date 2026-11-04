@@ -186,4 +186,6 @@ a.ytthumb:hover::after{opacity:1;transform:translate(-50%,-50%) scale(1.1)}
 #patents-granted,#patents-pending{scroll-margin-top:130px}
 .hero .btns .btn{display:inline-flex;align-items:center;gap:9px}
 .btn .bi{width:17px;height:17px;flex:0 0 auto;object-fit:contain}
-.btn:not(.primary) .bi{opacity:.9}
+.btn:not(.primary) .bi{opacity:.55;transition:opacity .2s}
+.btn:not(.primary):hover .bi{opacity:1}
+.stat-note{margin:10px 0 0;padding-bottom:26px;border-bottom:1px solid var(--line);font-size:13px;color:#8a93a3}
