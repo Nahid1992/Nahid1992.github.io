@@ -7,7 +7,7 @@
 <title>Research | Nahid Ul Islam</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="css/site.css?v=20261111">
+<link rel="stylesheet" href="css/site.css?v=20261112">
 </head>
 <body>
 <header class="topbar"><div class="wrap">
@@ -22,7 +22,7 @@
 <main class="wrap">
   <div class="pagehead"><div class="eyebrow">Research</div><h1>Deep Learning and Computer Vision</h1>
   <p>My research experience spans Artificial Intelligence, Machine Learning, Deep Learning, Computer Vision, Image Processing, and Foundation Models. My work includes model development, experiment design, large-scale pretraining, multi-task learning, self-supervised and transfer learning, benchmarking, and analysis, using CNNs, Vision Transformers, and Swin Transformers across classification, detection, and segmentation in 2D and 3D, with distributed training on GPU and HPC clusters.</p></div>
-  <div class="statstrip" aria-label="Research output at a glance"><a class="stat" href="index.html#publications"><b>8</b><span>Publications<small>6 conference, 2 journal</small></span></a><a class="stat" href="https://scholar.google.com/citations?user=uusv5scAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer"><b>180+</b><span>Citations<small>Google Scholar</small></span></a><a class="stat" href="index.html#patents-granted"><b>3</b><span>U.S. Patents<small class="pill granted">Granted</small></span></a><a class="stat" href="index.html#patents-pending"><b>5+</b><span>U.S. Patents<small class="pill pending">Pending</small></span></a></div>
+  <div class="statstrip" aria-label="Research output at a glance"><a class="stat" href="index.html#publications"><b data-count="8" data-suffix="">8</b><span>Publications<small>6 conference, 2 journal</small></span></a><a class="stat" href="https://scholar.google.com/citations?user=uusv5scAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer"><b data-count="180" data-suffix="+">180+</b><span>Citations<small>Google Scholar</small></span></a><a class="stat" href="index.html#patents-granted"><b data-count="3" data-suffix="">3</b><span>U.S. Patents<small class="pill granted">Granted</small></span></a><a class="stat" href="index.html#patents-pending"><b data-count="5" data-suffix="+">5+</b><span>U.S. Patents<small class="pill pending">Pending</small></span></a></div>
   <!-- UPDATE the numbers above and this date whenever citations, publications, or patents change -->
   <p class="stat-note">As of October 2026</p>
 
@@ -94,6 +94,34 @@
     });
   }
   window.addEventListener('scroll',update,{passive:true}); window.addEventListener('resize',update); update();
+})();
+</script>
+<script>
+(function(){
+  var els=[].slice.call(document.querySelectorAll('.statstrip b[data-count]'));
+  if(!els.length||!window.requestAnimationFrame) return;
+  if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var DURATION=1000, started=false;
+  function run(){
+    if(started) return; started=true;
+    var t0=null;
+    els.forEach(function(el){ el.textContent='0'+(el.getAttribute('data-suffix')||''); });
+    function tick(t){
+      if(t0===null) t0=t;
+      var p=Math.min((t-t0)/DURATION,1), e=1-Math.pow(1-p,3);
+      els.forEach(function(el){
+        var n=parseInt(el.getAttribute('data-count'),10), suf=el.getAttribute('data-suffix')||'';
+        el.textContent=Math.round(n*e)+(p>=1?suf:(Math.round(n*e)>0?suf:''));
+      });
+      if(p<1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  var strip=document.querySelector('.statstrip');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(en){ if(en[0].isIntersecting){ io.disconnect(); run(); } },{threshold:.4});
+    io.observe(strip);
+  } else run();
 })();
 </script>
 </body>
