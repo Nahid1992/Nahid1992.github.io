@@ -184,3 +184,6 @@ a.ytthumb:hover::after{opacity:1;transform:translate(-50%,-50%) scale(1.1)}
 .statstrip .pill.granted{background:#e3f6ea;color:#0f7a3a;border:1px solid #b9e6c9}
 .statstrip .pill.pending{background:#fff2dc;color:#9a5600;border:1px solid #f4d9a8}
 #patents-granted,#patents-pending{scroll-margin-top:130px}
+.hero .btns .btn{display:inline-flex;align-items:center;gap:9px}
+.btn .bi{width:17px;height:17px;flex:0 0 auto;object-fit:contain}
+.btn:not(.primary) .bi{opacity:.9}
