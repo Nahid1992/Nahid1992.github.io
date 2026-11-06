@@ -188,5 +188,16 @@ a.ytthumb:hover::after{opacity:1;transform:translate(-50%,-50%) scale(1.1)}
 .btn .bi{width:17px;height:17px;flex:0 0 auto;object-fit:contain}
 .btn:not(.primary) .bi{opacity:.55;transition:opacity .2s}
 .btn:not(.primary):hover .bi{opacity:1}
-.stat-note{margin:10px 0 0;padding-bottom:26px;border-bottom:1px solid var(--line);font-size:13px;color:#8a93a3}
+.stat-note{margin:10px 0 0;font-size:13px;color:#8a93a3}
 .statstrip .stat b{font-variant-numeric:tabular-nums}
+.docstrip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:22px;padding-bottom:26px;border-bottom:1px solid var(--line)}
+.docstrip .doc{display:flex;align-items:center;gap:14px;padding:18px 20px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 1px 2px rgba(23,32,51,.04);color:inherit;text-decoration:none;transition:.2s}
+.docstrip .doc:hover{background:var(--accent-soft);border-color:#cfdcf8;transform:translateY(-2px);box-shadow:0 8px 20px rgba(36,87,214,.12);text-decoration:none}
+.docstrip .di{flex:0 0 auto;display:grid;place-items:center;width:46px;height:46px;border-radius:12px;background:#fff;border:1px solid #cfd6e2;color:#1f2937}
+.docstrip .di svg{width:24px;height:24px}
+.docstrip .dt{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}
+.docstrip .dt b{font-size:17px;font-weight:700;color:var(--ink);line-height:1.25}
+.docstrip .dt small{font-size:13px;color:var(--muted);line-height:1.3}
+.docstrip .go{flex:0 0 auto;width:18px;height:18px;color:#8a93a3;transition:.2s}
+.docstrip .doc:hover .go{color:var(--accent-ink);transform:translate(2px,-2px)}
+@media (max-width:760px){.docstrip{grid-template-columns:1fr;gap:12px}}
